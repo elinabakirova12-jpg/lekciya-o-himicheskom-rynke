@@ -12,11 +12,12 @@
         <h1>Индустриальный навигатор химика</h1>
         <p class="subtitle">Интерактивный лекционный материал — Введение в профессию (2 курс)</p>
         
-        <!-- Обновленное меню навигации (3 вкладки) -->
+        <!-- Меню навигации (4 вкладки) -->
         <div class="nav-menu">
             <button class="nav-btn active" onclick="switchTab('professions')">Карта профессий</button>
             <button class="nav-btn" onclick="switchTab('practicum')">Тренажер: Слепое резюме</button>
             <button class="nav-btn" onclick="switchTab('career-jump')">Мой карьерный прыжок — 2029</button>
+            <button class="nav-btn" onclick="switchTab('business-case')">Бизнес-кейс: Химический стартап</button>
         </div>
     </div>
 
@@ -72,7 +73,6 @@
             </div>
         </div>
     </div>
-
     <!-- ЭКРАН 2: ТРЕНАЖЕР ПРАКТИКУМА -->
     <div id="tab-practicum" class="tab-content">
         <div class="section-title">Инструкция к практикуму «Слепое резюме»</div>
@@ -89,7 +89,7 @@
                 <div class="control-note" style="border-left-color: #4fc1ff; margin-top: 15px; background: #1a1a1c;">
                     <strong style="color: #4fc1ff; display: block; margin-bottom: 5px;">💡 Пример разбора (Разберите со студентами вслух):</strong>
                     <span style="font-size: 0.85rem; color: #aaa; font-style: italic; display: block; margin-bottom: 8px;">
-                        «Вакансия: Химик-исследователь. Обязанности: проведение многостадийного синтеза органических соединений, интерпретация ИК-спектров. Требуется MarvinSketch. Работа в команде, жесткие дедлайны».
+                        «Вакансия: Химик-исследователь. Обязанности: проведение многостадийного синтеза органических соединений, интерпретация ИК-спектров. Требуется MarvinSketch. Работа в команде, дедлайны».
                     </span>
                     <ul style="margin: 0; padding-left: 15px; font-size: 0.85rem; color: #ccc;">
                         <li><strong>Hard:</strong> Многостадийный органический синтез, ИК-спектроскопия.</li>
@@ -107,7 +107,7 @@
                     <div class="table-header-cell">Жесткие навыки (Hard)</div>
                     <div class="table-header-cell">Цифровые навыки (Digital)</div>
                     <div class="table-header-cell">Мягкие навыки (Soft)</div>
-                    <div class="table-cell">Какие химические методы и приборы требуются?</div>
+                    <div class="table-cell">Какие chemical методы и приборы требуются?</div>
                     <div class="table-cell">Какой специализированный софт и базы данных нужны?</div>
                     <div class="table-cell">Какие личные качества и навыки общения ожидает бизнес?</div>
                 </div>
@@ -115,36 +115,31 @@
             </div>
         </div>
     </div>
-    <!-- ЭКРАН 3: ТРЕНАЖЕР ДЛЯ САМОСТОЯТЕЛЬНОЙ РАБОТЫ (КАРЬЕРНЫЙ ПРЫЖОК) -->
+
+    <!-- ЭКРАН 3: ТРЕНАЖЕР КАРЬЕРНОГО ПРЫЖКА -->
     <div id="tab-career-jump" class="tab-content">
         <div class="section-title">Индивидуальный стратегический кейс: Проектирование будущего</div>
         <div class="practicum-container">
             <div class="info-panel">
                 <h3>Траектория профессионального развития до 2029 года</h3>
                 <p>Цель задания — сопоставить ваши личные профессиональные амбиции с актуальными запросами рынка труда и сформировать индивидуальный учебный план на оставшиеся годы специалитета.</p>
-                
                 <h4>Шаг 1. Поиск ориентиров (Агрегаторы вакансий):</h4>
                 <p>Найдите в сети и детально изучите <strong>3 реальные открытые вакансии</strong> химического профиля в РФ или мире, которые вам максимально интересны. Рекомендуемые ресурсы для поиска:</p>
-                
                 <div class="search-links-grid">
                     <a href="https://hh.ru" target="_blank" class="search-link-btn">hh.ru (Россия/Уфа)</a>
                     <a href="https://nature.com" target="_blank" class="search-link-btn">Nature Careers (Мировая наука)</a>
                     <a href="https://trudvsem.ru" target="_blank" class="search-link-btn">Работа России (Госсектор)</a>
                 </div>
-
                 <div class="control-note" style="border-left-color: #ff8700; background: #261c12; margin-top: 15px;">
                     <strong>Обязательное условие оформления отчета:</strong> В начале работы выпишите полные названия должностей, названия компаний, города и скопируйте исходные требования к квалификации по всем 3 найденным ориентирам.
                 </div>
             </div>
-
             <div class="table-panel">
                 <h3>Обязательная структура итогового отчета</h3>
-                
                 <div class="timeline-block">
                     <div class="timeline-header">Блок 2. Проект «Идеальное резюме выпускника УУНиТ — 2029»</div>
                     <p class="timeline-desc">Спроектируйте шаблон своего резюме в день окончания университета, где требования всех трех вакансий мечты полностью перекрыты вашими компетенциями (Hard, Digital и Soft Skills).</p>
                 </div>
-
                 <div class="timeline-block" style="border-top: 1px solid #444; padding-top: 12px; margin-top: 10px;">
                     <div class="timeline-header" style="color: var(--success);">Блок 3. Пошаговый трехлетний план развития</div>
                     <ul style="margin: 8px 0 0 0; padding-left: 20px; font-size: 0.88rem; color: var(--text-muted);">
@@ -153,12 +148,62 @@
                         <li><strong style="color: #fff;">5 КУРС:</strong> Какое базовое уфимское предприятие («Уфаоргсинтез», «ПОЛИЭФ», «УфаВИТА») я выберу для прохождения преддипломной практики, чтобы закрепить hard-навыки в реальном секторе?</li>
                     </ul>
                 </div>
-
                 <p class="time-limit" style="color: #ff8700;">⏱ Время на самостоятельный сбор данных и проектирование: 40 минут</p>
             </div>
         </div>
     </div>
+    <!-- ЭКРАН 4: КОМАНДНЫЙ БИЗНЕС-КЕЙС И ПИТЧИНГ ПРОЕКТОВ -->
+    <div id="tab-business-case" class="tab-content">
+        <div class="section-title">Командный бизнес-баттл: «Химический стартап полного цикла»</div>
+        <div class="practicum-container">
+            <!-- Левая панель: Сценарии задач на выбор команд -->
+            <div class="info-panel" style="flex: 1.1;">
+                <h3>📋 Техническое задание для команд (Выберите 1 кейс)</h3>
+                
+                <div class="timeline-block" style="border-left-color: #4ec9b0; margin-bottom: 12px; background: #162421;">
+                    <div class="timeline-header" style="color: #4ec9b0;">Кейс А. Защитное раневое покрытие нового поколения</div>
+                    <p class="timeline-desc"><strong>Задача:</strong> Предложить состав и способ получения пленок на основе модифицированного хитозана/поликапролактона с антибактериальным эффектом. Найти цены компонентов на оптовых химических рынках.</p>
+                </div>
 
+                <div class="timeline-block" style="border-left-color: #ffaa00; margin-bottom: 12px; background: #262013;">
+                    <div class="timeline-header" style="color: #ffaa00;">Кейс Б. Биоразлагаемая эко-упаковка для пищевой индустрии</div>
+                    <p class="timeline-desc"><strong>Задача:</strong> Спроектировать вывод на рынок Уфы термопластичных композиций на основе полилактида, способных разлагаться в почве за 6 месяцев. Оценить доступность и стоимость сырья.</p>
+                </div>
+
+                <div class="timeline-block" style="border-left-color: #f14c4c; background: #261616;">
+                    <div class="timeline-header" style="color: #f14c4c;">Кейс В. Пролонгированный кожный антисептик</div>
+                    <p class="timeline-desc"><strong>Задача:</strong> Разработать рецептуру бесспиртового антисептического средства длительного действия с использованием функциональных полимерных добавок, не сушащих кожу. Рассчитать себестоимость литра.</p>
+                </div>
+
+                <div class="control-note" style="border-left-color: #007acc; background: #111e26; margin-top: 10px;">
+                    <strong>🤝 Регламент Мозгового Штурма (Пара 3):</strong> Распределите роли (Исследователь, Технолог, Закупщик, Маркетолог). Зайдите на сайты крупных поставщиков химических реактивов (например, <em>ХимРеактивСнаб</em>) и найдите реальные оптовые цены на сырье. Нарисуйте на листе блок-схему производства.
+                </div>
+            </div>
+
+            <!-- Правая панель: Требования к питч-презентации -->
+            <div class="table-panel">
+                <h3>🚀 Регламент Питчинга и Структура Презентации (Пара 4)</h3>
+                
+                <div class="timeline-block" style="border-left-color: #4fc1ff;">
+                    <div class="timeline-header">Обязательный регламент защиты:</div>
+                    <p class="timeline-desc" style="font-size: 0.9rem; color: #eee; margin-bottom: 5px;">• Создание презентации строго из <strong>5 слайдов</strong> в PowerPoint / Canva.</p>
+                    <p class="timeline-desc" style="font-size: 0.9rem; color: #eee; margin-bottom: 5px;">• Время выступления команды перед инвесторами — ровно <strong>4 минуты</strong>.</p>
+                    <p class="timeline-desc" style="font-size: 0.9rem; color: #eee;">• Сессия агрессивных вопросов от жюри и команд-конкурентов — <strong>3 минуты</strong>.</p>
+                </div>
+
+                <h4 style="color: var(--accent); margin: 12px 0 6px 0; font-size: 1rem;">Структура 5 слайдов стартапа:</h4>
+                <ul style="margin: 0; padding-left: 20px; font-size: 0.85rem; color: var(--text-muted); line-height: 1.35;">
+                    <li><strong>Слайд 1. Бренд:</strong> Название стартапа, логотип, суть продукта и распределение ролей в команде химиков.</li>
+                    <li><strong>Слайд 2. Химия процесса:</strong> Обоснование состава, химические формулы компонентов, механизмы взаимодействия, преимущества формулы.</li>
+                    <li><strong>Слайд 3. Технология:</strong> Описание стадий производства, типы используемых аппаратов (смесители, реакторы, экструдеры).</li>
+                    <li><strong>Слайд 4. Экономика сырья:</strong> Таблица с оптовыми ценами на сырье, расчет себестоимости и обоснование выгоды.</li>
+                    <li><strong>Слайд 5. Рынок:</strong> Кто главный клиент в Башкортостане/РФ? Почему инвестор должен вложить деньги именно в вас?</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Двухпанельное широкое окно слайдов -->
     <div id="detailsModal" class="modal" onclick="closeModal()">
         <div class="modal-content" onclick="event.stopPropagation()">
             <div class="modal-panels">
