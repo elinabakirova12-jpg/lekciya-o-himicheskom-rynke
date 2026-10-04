@@ -183,3 +183,7 @@ li { margin-bottom: 6px; line-height: 1.35; color: var(--text-muted); font-size:
     background-color: #1a1a1c !important;
     padding: 15px; /* Чтобы векторные иконки красиво сидели внутри рамок */
 }
+.gallery-img {
+    height: 180px !important; /* Увеличили высоту для красивых реальных фото */
+    padding: 0 !important;   /* Убрали лишние отступы */
+}
