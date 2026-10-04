@@ -12,10 +12,11 @@
         <h1>Индустриальный навигатор химика</h1>
         <p class="subtitle">Интерактивный лекционный материал — Введение в профессию (2 курс)</p>
         
-        <!-- Кнопки переключения экранов -->
+        <!-- Обновленное меню навигации (3 вкладки) -->
         <div class="nav-menu">
             <button class="nav-btn active" onclick="switchTab('professions')">Карта профессий</button>
             <button class="nav-btn" onclick="switchTab('practicum')">Тренажер: Слепое резюме</button>
+            <button class="nav-btn" onclick="switchTab('career-jump')">Мой карьерный прыжок — 2029</button>
         </div>
     </div>
 
@@ -72,49 +73,40 @@
         </div>
     </div>
 
-    <!-- ЭКРАН 2: ТРЕНАЖЕР ПРАКТИКУМА ДЛЯ ВЫВОДА НА ПРОЕКТОР -->
+    <!-- ЭКРАН 2: ТРЕНАЖЕР ПРАКТИКУМА -->
     <div id="tab-practicum" class="tab-content">
         <div class="section-title">Инструкция к практикуму «Слепое резюме»</div>
-        
         <div class="practicum-container">
-            <!-- Памятка-инструкция для студентов -->
             <div class="info-panel">
                 <h3>Задание для аналитиков</h3>
                 <p>Проанализируйте выданную вам слепую вакансию работодателя. Проведите декомпозицию требований и распределите их на три ключевые категории компетенций.</p>
-                
                 <h4>Что писать в колонки таблицы:</h4>
                 <ul>
                     <li><strong>Жесткие навыки (Hard Skills):</strong> Химические методы, профильные законы, приборы, методики синтеза или анализа, стандарты ГОСТ.</li>
-                    <li><strong>Цифровые навыки (Digital Skills):</strong> Химический профессиональный софт (ChemDraw, MarvinSketch, Aspen HYSYS), лабораторные информационные системы (ЛИС), базы данных публикаций.</li>
+                    <li><strong>Цифровые навыки (Digital Skills):</strong> Химический софт (ChemDraw, MarvinSketch, Aspen HYSYS), лабораторные информационные системы (ЛИС), базы данных.</li>
                     <li><strong>Мягкие навыки (Soft Skills):</strong> Личные качества, особенности коммуникации, командная работа, стрессоустойчивость, тайм-менеджмент.</li>
                 </ul>
-
-                <!-- Тот самый Пример-ориентир для демонстрации перед стартом -->
                 <div class="control-note" style="border-left-color: #4fc1ff; margin-top: 15px; background: #1a1a1c;">
                     <strong style="color: #4fc1ff; display: block; margin-bottom: 5px;">💡 Пример разбора (Разберите со студентами вслух):</strong>
                     <span style="font-size: 0.85rem; color: #aaa; font-style: italic; display: block; margin-bottom: 8px;">
-                        «Вакансия: Химик-исследователь. Обязанности: проведение многостадийного синтеза органических соединений, интерпретация ИК-спектров. Требуется уверенное построение схем в MarvinSketch. Работа в интернациональной команде, готовность к жестким дедлайнам».
+                        «Вакансия: Химик-исследователь. Обязанности: проведение многостадийного синтеза органических соединений, интерпретация ИК-спектров. Требуется MarvinSketch. Работа в команде, жесткие дедлайны».
                     </span>
                     <ul style="margin: 0; padding-left: 15px; font-size: 0.85rem; color: #ccc;">
-                        <li><strong>Hard Skills:</strong> Многостадийный органический синтез, ИК-спектроскопия.</li>
-                        <li><strong>Digital Skills:</strong> Построение структур в MarvinSketch.</li>
-                        <li><strong>Soft Skills:</strong> Работа в интернациональной команде, стрессоустойчивость и тайм-менеджмент (дедлайны).</li>
+                        <li><strong>Hard:</strong> Многостадийный органический синтез, ИК-спектроскопия.</li>
+                        <li><strong>Digital:</strong> Построение структур в MarvinSketch.</li>
+                        <li><strong>Soft:</strong> Работа в команде, стрессоустойчивость и тайм-менеджмент (дедлайны).</li>
                     </ul>
                 </div>
-
                 <div class="control-note">
                     <strong>Финальный вопрос (письменно):</strong> Оцените по шкале от 1 до 5, насколько вы сейчас готовы к этой вакансии? Чего вам не хватает сильнее всего?
                 </div>
             </div>
-
-            <!-- Интерактивная таблица-подсказка (ориентир) -->
             <div class="table-panel">
                 <h3>Шаблон оформления таблицы компетенций</h3>
                 <div class="sample-table">
                     <div class="table-header-cell">Жесткие навыки (Hard)</div>
                     <div class="table-header-cell">Цифровые навыки (Digital)</div>
                     <div class="table-header-cell">Мягкие навыки (Soft)</div>
-                    
                     <div class="table-cell">Какие химические методы и приборы требуются?</div>
                     <div class="table-cell">Какой специализированный софт и базы данных нужны?</div>
                     <div class="table-cell">Какие личные качества и навыки общения ожидает бизнес?</div>
@@ -123,8 +115,50 @@
             </div>
         </div>
     </div>
+    <!-- ЭКРАН 3: ТРЕНАЖЕР ДЛЯ САМОСТОЯТЕЛЬНОЙ РАБОТЫ (КАРЬЕРНЫЙ ПРЫЖОК) -->
+    <div id="tab-career-jump" class="tab-content">
+        <div class="section-title">Индивидуальный стратегический кейс: Проектирование будущего</div>
+        <div class="practicum-container">
+            <div class="info-panel">
+                <h3>Траектория профессионального развития до 2029 года</h3>
+                <p>Цель задания — сопоставить ваши личные профессиональные амбиции с актуальными запросами рынка труда и сформировать индивидуальный учебный план на оставшиеся годы специалитета.</p>
+                
+                <h4>Шаг 1. Поиск ориентиров (Агрегаторы вакансий):</h4>
+                <p>Найдите в сети и детально изучите <strong>3 реальные открытые вакансии</strong> химического профиля в РФ или мире, которые вам максимально интересны. Рекомендуемые ресурсы для поиска:</p>
+                
+                <div class="search-links-grid">
+                    <a href="https://hh.ru" target="_blank" class="search-link-btn">hh.ru (Россия/Уфа)</a>
+                    <a href="https://nature.com" target="_blank" class="search-link-btn">Nature Careers (Мировая наука)</a>
+                    <a href="https://trudvsem.ru" target="_blank" class="search-link-btn">Работа России (Госсектор)</a>
+                </div>
 
-    <!-- Двухпанельное широкое окно слайдов -->
+                <div class="control-note" style="border-left-color: #ff8700; background: #261c12; margin-top: 15px;">
+                    <strong>Обязательное условие оформления отчета:</strong> В начале работы выпишите полные названия должностей, названия компаний, города и скопируйте исходные требования к квалификации по всем 3 найденным ориентирам.
+                </div>
+            </div>
+
+            <div class="table-panel">
+                <h3>Обязательная структура итогового отчета</h3>
+                
+                <div class="timeline-block">
+                    <div class="timeline-header">Блок 2. Проект «Идеальное резюме выпускника УУНиТ — 2029»</div>
+                    <p class="timeline-desc">Спроектируйте шаблон своего резюме в день окончания университета, где требования всех трех вакансий мечты полностью перекрыты вашими компетенциями (Hard, Digital и Soft Skills).</p>
+                </div>
+
+                <div class="timeline-block" style="border-top: 1px solid #444; padding-top: 12px; margin-top: 10px;">
+                    <div class="timeline-header" style="color: var(--success);">Блок 3. Пошаговый трехлетний план развития</div>
+                    <ul style="margin: 8px 0 0 0; padding-left: 20px; font-size: 0.88rem; color: var(--text-muted);">
+                        <li><strong style="color: #fff;">3 КУРС:</strong> Какой химический софт я обязуюсь освоить? В какую именно исследовательскую лабораторию Единого инновационного комплекса УУНиТ я приду работать во внеучебное время?</li>
+                        <li><strong style="color: #fff;">4 КУРС:</strong> На какие физико-химические приборы (ЯМР, ВЭЖХ, ГХ-МС) я целенаправленно сделаю упор во время практикумов? Какую тему научно-исследовательской курсовой работы я выберу под задачи работодателя?</li>
+                        <li><strong style="color: #fff;">5 КУРС:</strong> Какое базовое уфимское предприятие («Уфаоргсинтез», «ПОЛИЭФ», «УфаВИТА») я выберу для прохождения преддипломной практики, чтобы закрепить hard-навыки в реальном секторе?</li>
+                    </ul>
+                </div>
+
+                <p class="time-limit" style="color: #ff8700;">⏱ Время на самостоятельный сбор данных и проектирование: 40 минут</p>
+            </div>
+        </div>
+    </div>
+
     <div id="detailsModal" class="modal" onclick="closeModal()">
         <div class="modal-content" onclick="event.stopPropagation()">
             <div class="modal-panels">
