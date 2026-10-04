@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Индустриальный навигатор chemical</title>
+    <title>Индустриальный навигатор химика</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -11,68 +11,113 @@
     <div class="header">
         <h1>Индустриальный навигатор химика</h1>
         <p class="subtitle">Интерактивный лекционный материал — Введение в профессию (2 курс)</p>
-    </div>
-
-    <div class="section-title">Часть 1. Три кита химического рынка</div>
-    <div class="grid">
-        <div class="card" onclick="showDetails('pharma')">
-            <h3>Фармацевтика</h3>
-            <div class="role-tag">Высокомаржинальный сектор</div>
-            <p>Разработка, синтез и контроль качества лекарственных препаратов биологического и органического происхождения.</p>
-            <div class="action-text">Подробнее об индустрии →</div>
-        </div>
-        <div class="card" onclick="showDetails('petro')">
-            <h3>Нефтехимия и полимеры</h3>
-            <p>Крупнотоннажное производство материалов, определяющих современный мир: от пластиков до композитов и катализаторов.</p>
-            <div class="role-tag">Базис экономики</div>
-            <div class="action-text">Подробнее об индустрии →</div>
-        </div>
-        <div class="card" onclick="showDetails('rd')">
-            <h3>Академический сектор и вузовская наука</h3>
-            <p>Лаборатории на переднем краю науки. Исследования новых материалов, хемоинформатика, квантовая химия и новые реакции.</p>
-            <div class="role-tag">Фундаментальная наука</div>
-            <div class="action-text">Подробнее об индустрии →</div>
+        
+        <!-- Кнопки переключения экранов -->
+        <div class="nav-menu">
+            <button class="nav-btn active" onclick="switchTab('professions')">Карта профессий</button>
+            <button class="nav-btn" onclick="switchTab('practicum')">Тренажер: Слепое резюме</button>
         </div>
     </div>
 
-    <div class="section-title">Часть 2. Ключевые роли в профессии</div>
-    <div class="grid">
-        <div class="card" onclick="showDetails('synthetic')">
-            <h3>Химик-синтетик</h3>
-            <div class="role-tag">«Творец молекул»</div>
-            <p>Создает принципиально новые молекулярные структуры методами органического, неорганического и координационного синтеза.</p>
-            <div class="action-text">Развернуть карту компетенций →</div>
+    <!-- ЭКРАН 1: КАРТА ПРОФЕССИЙ (ВАША ЛЕКЦИЯ) -->
+    <div id="tab-professions" class="tab-content active-tab">
+        <div class="section-title">Часть 1. Три кита химического рынка</div>
+        <div class="grid">
+            <div class="card" onclick="showDetails('pharma')">
+                <h3>Фармацевтика</h3>
+                <div class="role-tag">Высокомаржинальный сектор</div>
+                <p>Разработка, синтез и контроль качества лекарственных препаратов биологического и органического происхождения.</p>
+                <div class="action-text">Подробнее об индустрии →</div>
+            </div>
+            <div class="card" onclick="showDetails('petro')">
+                <h3>Нефтехимия и полимеры</h3>
+                <p>Крупнотоннажное производство материалов, определяющих современный мир: от пластиков до композитов и катализаторов.</p>
+                <div class="role-tag">Базис экономики</div>
+                <div class="action-text">Подробнее об индустрии →</div>
+            </div>
+            <div class="card" onclick="showDetails('rd')">
+                <h3>Академический сектор и вузовская наука</h3>
+                <p>Лаборатории на переднем краю науки. Исследования новых материалов, хемоинформатика, квантовая химия и новые реакции.</p>
+                <div class="role-tag">Фундаментальная наука</div>
+                <div class="action-text">Подробнее об индустрии →</div>
+            </div>
         </div>
-        <div class="card" onclick="showDetails('analyst')">
-            <h3>Химик-аналитик</h3>
-            <div class="role-tag">«Лабораторный детектив»</div>
-            <p>Определяет состав сложных систем, находит примеси, подтверждает структуру соединений с помощью физико-химических методов.</p>
-            <div class="action-text">Развернуть карту компетенций →</div>
-        </div>
-        <div class="card" onclick="showDetails('technologist')">
-            <h3>Химик-технолог</h3>
-            <div class="role-tag">«Масштабатор процессов»</div>
-            <p>Проектирует аппараты и потоки, трансформируя микро-синтез в колбе в стабильный промышленный процесс на заводе.</p>
-            <div class="action-text">Развернуть карту компетенций →</div>
-        </div>
-        <div class="card" onclick="showDetails('qaqc')">
-            <h3>Специалист по качеству</h3>
-            <div class="role-tag">«Гарант качества и стандартов»</div>
-            <p>Управляет рисками, контролирует качество сырья, полупродуктов и выходящих партий товаров согласно стандартам ISO и GMP.</p>
-            <div class="action-text">Развернуть карту компетенций →</div>
+
+        <div class="section-title">Часть 2. Ключевые роли в профессии</div>
+        <div class="grid">
+            <div class="card" onclick="showDetails('synthetic')">
+                <h3>Химик-синтетик</h3>
+                <div class="role-tag">«Творец молекул»</div>
+                <p>Создает принципиально новые молекулярные структуры методами органического, неорганического и координационного синтеза.</p>
+                <div class="action-text">Развернуть карту компетенций →</div>
+            </div>
+            <div class="card" onclick="showDetails('analyst')">
+                <h3>Химик-аналитик</h3>
+                <div class="role-tag">«Лабораторный детектив»</div>
+                <p>Определяет состав сложных систем, находит примеси, подтверждает структуру соединений с помощью физико-химических методов.</p>
+                <div class="action-text">Развернуть карту компетенций →</div>
+            </div>
+            <div class="card" onclick="showDetails('technologist')">
+                <h3>Химик-технолог</h3>
+                <div class="role-tag">«Масштабатор процессов»</div>
+                <p>Проектирует аппараты и потоки, трансформируя микро-синтез в колбе в стабильный промышленный процесс на заводе.</p>
+                <div class="action-text">Развернуть карту компетенций →</div>
+            </div>
+            <div class="card" onclick="showDetails('qaqc')">
+                <h3>Специалист по качеству</h3>
+                <div class="role-tag">«Гарант качества и стандартов»</div>
+                <p>Управляет рисками, контролирует качество сырья, полупродуктов и выходящих партий товаров согласно стандартам ISO и GMP.</p>
+                <div class="action-text">Развернуть карту компетенций →</div>
+            </div>
         </div>
     </div>
 
-    <!-- Новое двухпанельное широкое окно -->
+    <!-- ЭКРАН 2: ТРЕНАЖЕР ПРАКТИКУМА ДЛЯ ВЫВОДА НА ПРОЕКТОР -->
+    <div id="tab-practicum" class="tab-content">
+        <div class="section-title">Инструкция к практикуму «Слепое резюме»</div>
+        
+        <div class="practicum-container">
+            <!-- Памятка-инструкция для студентов -->
+            <div class="info-panel">
+                <h3>Задание для аналитиков</h3>
+                <p>Проанализируйте выданную вам слепую вакансию работодателя. Проведите декомпозицию требований и распределите их на три ключевые категории компетенций.</p>
+                
+                <h4>Что писать в колонки таблицы:</h4>
+                <ul>
+                    <li><strong>Жесткие навыки (Hard Skills):</strong> Химические методы, профильные законы, приборы, методики синтеза или анализа, стандарты ГОСТ.</li>
+                    <li><strong>Цифровые навыки (Digital Skills):</strong> Химический профессиональный софт (ChemDraw, MarvinSketch, Aspen HYSYS), лабораторные информационные системы (ЛИС), базы данных публикаций.</li>
+                    <li><strong>Мягкие навыки (Soft Skills):</strong> Личные качества, особенности коммуникации, командная работа, стрессоустойчивость, тайм-менеджмент.</li>
+                </ul>
+                <div class="control-note">
+                    <strong>Финальный вопрос (письменно):</strong> Оцените по шкале от 1 до 5, насколько вы сейчас готовы к этой вакансии? Чего вам не хватает сильнее всего?
+                </div>
+            </div>
+
+            <!-- Интерактивная таблица-подсказка (ориентир) -->
+            <div class="table-panel">
+                <h3>Шаблон оформления таблицы компетенций</h3>
+                <div class="sample-table">
+                    <div class="table-header-cell">Жесткие навыки (Hard)</div>
+                    <div class="table-header-cell">Цифровые навыки (Digital)</div>
+                    <div class="table-header-cell">Мягкие навыки (Soft)</div>
+                    
+                    <div class="table-cell">Какие химические методы и приборы требуются?</div>
+                    <div class="table-cell">Какой специализированный софт и базы данных нужны?</div>
+                    <div class="table-cell">Какие личные качества и навыки общения ожидает бизнес?</div>
+                </div>
+                <p class="time-limit">⏱ Время на выполнение работы: 20 минут</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Двухпанельное широкое окно слайдов -->
     <div id="detailsModal" class="modal" onclick="closeModal()">
         <div class="modal-content" onclick="event.stopPropagation()">
             <div class="modal-panels">
-                <!-- Левая панель с общим описанием -->
                 <div class="modal-left">
                     <h2 id="modalTitle">Название сектора</h2>
                     <p id="modalDescription" class="desc"></p>
                 </div>
-                <!-- Правая панель со списками -->
                 <div class="modal-right">
                     <h4 id="block1Title">Ключевые векторы:</h4>
                     <ul id="modalBlock1"></ul>

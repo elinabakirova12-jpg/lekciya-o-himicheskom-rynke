@@ -153,3 +153,18 @@ function showDetails(key) {
 function closeModal() {
     document.getElementById('detailsModal').style.display = 'none';
 }
+// Функция переключения вкладок приложения
+function switchTab(tabId) {
+    // Скрываем весь контент вкладок
+    document.querySelectorAll('.tab-content').forEach(tab => {
+        tab.classList.remove('active-tab');
+    });
+    // Убираем активный класс у кнопок меню
+    document.querySelectorAll('.nav-btn').forEach(btn => {
+        btn.classList.remove('active');
+    });
+    
+    // Включаем нужную вкладку и подсвечиваем кнопку
+    document.getElementById('tab-' + tabId).classList.add('active-tab');
+    event.target.classList.add('active');
+}
