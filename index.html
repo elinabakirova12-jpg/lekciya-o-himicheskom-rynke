@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Индустриальный навигатор chemical</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="header">
+        <h1>Индустриальный навигатор химика</h1>
+        <p class="subtitle">Интерактивный лекционный материал — Введение в профессию (2 курс)</p>
+    </div>
+
+    <div class="section-title">Часть 1. Три кита химического рынка</div>
+    <div class="grid">
+        <div class="card" onclick="showDetails('pharma')">
+            <h3>Фармацевтика</h3>
+            <div class="role-tag">Высокомаржинальный сектор</div>
+            <p>Разработка, синтез и контроль качества лекарственных препаратов биологического и органического происхождения.</p>
+            <div class="action-text">Подробнее об индустрии →</div>
+        </div>
+        <div class="card" onclick="showDetails('petro')">
+            <h3>Нефтехимия и полимеры</h3>
+            <p>Крупнотоннажное производство материалов, определяющих современный мир: от пластиков до композитов и катализаторов.</p>
+            <div class="role-tag">Базис экономики</div>
+            <div class="action-text">Подробнее об индустрии →</div>
+        </div>
+        <div class="card" onclick="showDetails('rd')">
+            <h3>Академический сектор и вузовская наука</h3>
+            <p>Лаборатории на переднем краю науки. Исследования новых материалов, хемоинформатика, квантовая химия и новые реакции.</p>
+            <div class="role-tag">Фундаментальная наука</div>
+            <div class="action-text">Подробнее об индустрии →</div>
+        </div>
+    </div>
+
+    <div class="section-title">Часть 2. Ключевые роли в профессии</div>
+    <div class="grid">
+        <div class="card" onclick="showDetails('synthetic')">
+            <h3>Химик-синтетик</h3>
+            <div class="role-tag">«Творец молекул»</div>
+            <p>Создает принципиально новые молекулярные структуры методами органического, неорганического и координационного синтеза.</p>
+            <div class="action-text">Развернуть карту компетенций →</div>
+        </div>
+        <div class="card" onclick="showDetails('analyst')">
+            <h3>Химик-аналитик</h3>
+            <div class="role-tag">«Лабораторный детектив»</div>
+            <p>Определяет состав сложных систем, находит примеси, подтверждает структуру соединений с помощью физико-химических методов.</p>
+            <div class="action-text">Развернуть карту компетенций →</div>
+        </div>
+        <div class="card" onclick="showDetails('technologist')">
+            <h3>Химик-технолог</h3>
+            <div class="role-tag">«Масштабатор процессов»</div>
+            <p>Проектирует аппараты и потоки, трансформируя микро-синтез в колбе в стабильный промышленный процесс на заводе.</p>
+            <div class="action-text">Развернуть карту компетенций →</div>
+        </div>
+        <div class="card" onclick="showDetails('qaqc')">
+            <h3>Специалист по качеству</h3>
+            <div class="role-tag">«Гарант качества и стандартов»</div>
+            <p>Управляет рисками, контролирует качество сырья, полупродуктов и выходящих партий товаров согласно стандартам ISO и GMP.</p>
+            <div class="action-text">Развернуть карту компетенций →</div>
+        </div>
+    </div>
+
+    <!-- Новое двухпанельное широкое окно -->
+    <div id="detailsModal" class="modal" onclick="closeModal()">
+        <div class="modal-content" onclick="event.stopPropagation()">
+            <div class="modal-panels">
+                <!-- Левая панель с общим описанием -->
+                <div class="modal-left">
+                    <h2 id="modalTitle">Название сектора</h2>
+                    <p id="modalDescription" class="desc"></p>
+                </div>
+                <!-- Правая панель со списками -->
+                <div class="modal-right">
+                    <h4 id="block1Title">Ключевые векторы:</h4>
+                    <ul id="modalBlock1"></ul>
+                    <h4 id="block2Title">Инструменты и навыки:</h4>
+                    <ul id="modalBlock2"></ul>
+                </div>
+            </div>
+            <button class="close-btn" onclick="closeModal()">Закрыть слайд</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
