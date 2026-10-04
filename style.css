@@ -179,3 +179,7 @@ li { margin-bottom: 6px; line-height: 1.35; color: var(--text-muted); font-size:
         height: 90px;
     }
 }
+.gallery-img {
+    background-color: #1a1a1c !important;
+    padding: 15px; /* Чтобы векторные иконки красиво сидели внутри рамок */
+}

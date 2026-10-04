@@ -3,10 +3,8 @@ const data = {
         title: "Фармацевтическая индустрия",
         desc: "Высокотехнологичный сектор полного цикла: от направленного компьютерного моделирования биологически активных молекул до сложнейшего тонкого органического синтеза действующих веществ (субстанций) и внедрения биоинженерных клеточных технологий. Отрасль полностью подчинена жестким стандартам качества надлежащей производственной практики (GMP), исключающим любой человеческий фактор.",
         images: [
-            "https://unsplash.com",
-            "https://unsplash.com",
-            "https://unsplash.com",
-            "https://unsplash.com"
+            "data:image/svg+xml;utf8,<svg xmlns='http://w3.org' width='100' height='100' viewBox='0 0 24 24' fill='none' stroke='%234fc1ff' stroke-width='1.5'><path d='M4.5 16.5c-1.5 0-2.5-1.2-2.5-2.5s1-2.5 2.5-2.5h15c1.5 0 2.5 1.2 2.5 2.5s-1 2.5-2.5 2.5z'/><path d='M10 11.5v-5c0-1.1.9-2 2-2s2 .9 2 2v5'/></svg>",
+            "data:image/svg+xml;utf8,<svg xmlns='http://w3.org' width='100' height='100' viewBox='0 0 24 24' fill='none' stroke='%234ec9b0' stroke-width='1.5'><rect x='3' y='3' width='18' height='18' rx='2'/><path d='M9 9h6v6H9z'/></svg>"
         ],
         b1Title: "Ключевые этапы разработки и производства:",
         b1: [
@@ -27,10 +25,8 @@ const data = {
         title: "Нефтехимия, газохимия и полимеры",
         desc: "Высокотехнологичный сектор крупнотоннажного и малотоннажного синтеза. Занимается глубокой переработкой углеводородного сырья в пластмассы, каучуки, синтетические волокна, лаки и специальные композиционные материалы. Современное производство опирается на физико-химическое цифровое моделирование процессов переработки расплавов полимеров, регулирование надмолекулярной структуры и создание умных композитов.",
         images: [
-            "https://unsplash.com",
-            "https://unsplash.com",
-            "https://unsplash.com",
-            "https://unsplash.com"
+            "data:image/svg+xml;utf8,<svg xmlns='http://w3.org' width='100' height='100' viewBox='0 0 24 24' fill='none' stroke='%23ffaa00' stroke-width='1.5'><path d='M2 22h20M5 22V2l5 3v17M15 22V9l5 2v11'/></svg>",
+            "data:image/svg+xml;utf8,<svg xmlns='http://w3.org' width='100' height='100' viewBox='0 0 24 24' fill='none' stroke='%23ff8700' stroke-width='1.5'><circle cx='12' cy='12' r='10'/><path d='M8 12h8M12 8v8'/></svg>"
         ],
         b1Title: "Ключевые технологические фронты:",
         b1: [
@@ -51,10 +47,8 @@ const data = {
         title: "Академический сектор и вузовская наука",
         desc: "Пространство фундаментальных исследований, государственного заказа и грантового финансирования. В УУНиТ эта деятельность сосредоточена в современных научных лабораториях, таких как Лаборатория рециклинга и модификации полимеров Единого инновационного комплекса. Работа ученого здесь — это не просто эксперименты, а управление полным циклом академического проекта: от цифрового моделирования до публикаций результатов в журналах ВАК и защиты диссертаций.",
         images: [
-            "https://unsplash.com",
-            "https://unsplash.com",
-            "https://unsplash.com",
-            "https://unsplash.com"
+            "data:image/svg+xml;utf8,<svg xmlns='http://w3.org' width='100' height='100' viewBox='0 0 24 24' fill='none' stroke='%23007acc' stroke-width='1.5'><path d='M4 19.5A2.5 2.5 0 0 1 6.5 17H20M4 4.5A2.5 2.5 0 0 1 6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5z'/></svg>",
+            "data:image/svg+xml;utf8,<svg xmlns='http://w3.org' width='100' height='100' viewBox='0 0 24 24' fill='none' stroke='%23success' stroke-width='1.5'><path d='M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5'/></svg>"
         ],
         b1Title: "Структура и форматы работы ученого в УУНиТ:",
         b1: [
@@ -75,12 +69,9 @@ const data = {
         title: "Профиль: Химик-синтетик",
         desc: "«Архитектор и создатель молекул». Главная цель его работы — проектирование путей синтеза и непосредственное получение новых химических соединений с заданной структурой. Это специалист, который проводит большую часть времени у вытяжного шкафа, превращая теоретические схемы в реальные высокочистые вещества.",
         images: [
-            "https://unsplash.com",
-            "https://unsplash.com",
-            "https://unsplash.com",
-            "https://unsplash.com"
+            "data:image/svg+xml;utf8,<svg xmlns='http://w3.org' width='100' height='100' viewBox='0 0 24 24' fill='none' stroke='%234fc1ff' stroke-width='1.5'><path d='M10 2v6.5L3 18.5A1.5 1.5 0 0 0 4.5 21h15a1.5 1.5 0 0 0 1.5-2.5L14 8.5V2h-4z'/></svg>"
         ],
-        b1Title: "Ежедневные задачи и practical работа:",
+        b1Title: "Ежедневные задачи и практическая работа:",
         b1: [
             "Литературный поиск — детальный анализ научных статей и патентов в базах данных (eLibrary, Академия Google) для поиска готовых методик синтеза аналогичных соединений.",
             "Сборка реакционных установок — монтаж стеклянных приборов под конкретные условия (нагревание с обратным холодильником, криогенное охлаждение, перемешивание в инертной атмосфере).",
@@ -98,10 +89,7 @@ const data = {
         title: "Профиль: Химик-аналитик",
         desc: "«Лабораторный детектив химического мира». Его главная цель — качественное и количественное определение состава сложных систем, установление структуры новых соединений и выявление следовых количеств примесей. Оперирует прецизионным физико-химическим оборудованием, выступая главным экспертом, подтверждающим успешность работы синтетиков и технологов.",
         images: [
-            "https://unsplash.com",
-            "https://unsplash.com",
-            "https://unsplash.com",
-            "https://unsplash.com"
+            "data:image/svg+xml;utf8,<svg xmlns='http://w3.org' width='100' height='100' viewBox='0 0 24 24' fill='none' stroke='%234ec9b0' stroke-width='1.5'><path d='M3 3v18h18M18.5 7.5L14 12l-4-4-5 5'/></svg>"
         ],
         b1Title: "Ежедневные аналитические задачи:",
         b1: [
@@ -122,10 +110,7 @@ const data = {
         title: "Профиль: Химик-технолог",
         desc: "«Инженерный разум химического производства». Его главная цель — перенос лабораторного метода синтеза (оперирующего граммами в колбе) в условия многотонного промышленного завода. Он отвечает за проектирование аппаратов, расчет потоков сырья, энергии и обеспечение максимальной экономической и экологической эффективности процессов.",
         images: [
-            "https://unsplash.com",
-            "https://unsplash.com",
-            "https://unsplash.com",
-            "https://unsplash.com"
+            "data:image/svg+xml;utf8,<svg xmlns='http://w3.org' width='100' height='100' viewBox='0 0 24 24' fill='none' stroke='%23ffaa00' stroke-width='1.5'><path d='M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.7a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.7z'/></svg>"
         ],
         b1Title: "Ежедневные технологические задачи:",
         b1: [
@@ -146,10 +131,7 @@ const data = {
         title: "Профиль: Специалист по контролю и управлению качеством",
         desc: "«Гарант стабильности и безопасности химической продукции». Он отвечает за создание и поддержание комплексной системы, которая полностью исключает появление производственного брака. Специалист контролирует весь жизненный цикл продукта — от проверки цистерн с входящим сырьем до финального тестирования готового товара перед его отгрузкой потребителю.",
         images: [
-            "https://unsplash.com",
-            "https://unsplash.com",
-            "https://unsplash.com",
-            "https://unsplash.com"
+            "data:image/svg+xml;utf8,<svg xmlns='http://w3.org' width='100' height='100' viewBox='0 0 24 24' fill='none' stroke='%23007acc' stroke-width='1.5'><path d='M22 11.08V12a10 10 0 1 1-5.93-9.14'/><path d='M22 4L12 14.01l-3-3'/></svg>"
         ],
         b1Title: "Ежедневные задачи контроля и аудита:",
         b1: [
@@ -166,12 +148,12 @@ const data = {
         ]
     }
 };
+
 function showDetails(key) {
     const item = data[key];
     document.getElementById('modalTitle').innerText = item.title;
     document.getElementById('modalDescription').innerText = item.desc;
     
-    // Обновленная логика генерации галереи картинок без скрытия
     const galleryContainer = document.getElementById('modalGallery');
     galleryContainer.innerHTML = ''; 
     
@@ -180,7 +162,6 @@ function showDetails(key) {
         img.src = url;
         img.alt = item.title;
         img.className = 'gallery-img';
-        // Убрали строку img.onerror, которая блокировала показ локально
         galleryContainer.appendChild(img);
     });
     
@@ -193,7 +174,6 @@ function showDetails(key) {
         b1List.appendChild(li);
     });
     
-    // Добавили строчку для вывода второго блока списков, которая могла потеряться
     document.getElementById('block2Title').innerText = item.b2Title;
     const b2List = document.getElementById('modalBlock2');
     b2List.innerHTML = '';
@@ -220,4 +200,3 @@ function switchTab(tabId) {
     document.getElementById('tab-' + tabId).classList.add('active-tab');
     event.target.classList.add('active');
 }
-
