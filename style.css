@@ -139,3 +139,43 @@ li { margin-bottom: 6px; line-height: 1.35; color: var(--text-muted); font-size:
     .modal-left { border-right: none; border-bottom: 1px solid #444; padding-right: 0; padding-bottom: 15px; }
     .modal-left, .modal-right { overflow: visible; max-height: none; }
 }
+/* Стили для визуальной фотогалереи внутри слайдов */
+.visual-header {
+    color: var(--accent) !important;
+    margin-top: 20px !important;
+    border-bottom: 1px dashed #444;
+    padding-bottom: 4px;
+}
+
+.modal-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 10px;
+    margin-top: 12px;
+}
+
+.gallery-img {
+    width: 100%;
+    height: 110px;
+    object-fit: cover;
+    border-radius: 6px;
+    border: 1px solid #444;
+    transition: transform 0.2s, border-color 0.2s;
+    background-color: #1a1a1a;
+}
+
+.gallery-img:hover {
+    transform: scale(1.04);
+    border-color: var(--primary);
+    cursor: zoom-in;
+}
+
+/* Мобильная адаптация галереи */
+@media (max-width: 768px) {
+    .modal-gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .gallery-img {
+        height: 90px;
+    }
+}

@@ -212,14 +212,21 @@
         </div>
     </div>
 
-    <!-- Двухпанельное широкое окно слайдов -->
+        <!-- Модальное окно с визуальной галереей -->
     <div id="detailsModal" class="modal" onclick="closeModal()">
         <div class="modal-content" onclick="event.stopPropagation()">
             <div class="modal-panels">
+                <!-- Левая панель: Название, Описание и Сетка изображений -->
                 <div class="modal-left">
                     <h2 id="modalTitle">Название сектора</h2>
                     <p id="modalDescription" class="desc"></p>
+                    
+                    <h4 class="visual-header">📸 Визуальный материал и приборная база:</h4>
+                    <div id="modalGallery" class="modal-gallery">
+                        <!-- Сюда JavaScript будет вставлять картинки -->
+                    </div>
                 </div>
+                <!-- Правая панель: Списки и регламенты -->
                 <div class="modal-right">
                     <h4 id="block1Title">Ключевые векторы:</h4>
                     <ul id="modalBlock1"></ul>
@@ -234,4 +241,3 @@
     <script src="script.js"></script>
 </body>
 </html>
-
